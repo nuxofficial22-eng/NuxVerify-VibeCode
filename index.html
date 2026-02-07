@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NuxVerify ─ VibeCode</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+body{background:url("https://risrfgvolfxuavpsmfjn.supabase.co/storage/v1/object/public/uploads/1770499272171-2aidiur1.jpg") center/cover no-repeat fixed;color:#fff;min-height:100vh;}
+
+#loading{position:fixed;inset:0;background:#000814;display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:9999;}
+.loader{width:48px;height:48px;border:4px solid #ffffff20;border-top:4px solid #3b82f6;border-radius:50%;animation:spin 1s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.container{display:none;min-height:100vh;padding:16px;display:flex;justify-content:center;align-items:center;}
+.card{width:100%;max-width:420px;background:rgba(255,255,255,.07);backdrop-filter:blur(24px);border-radius:34px;padding:22px;}
+.title{text-align:center;font-size:20px;font-weight:700;margin-bottom:18px;}
+
+.media{width:100%;border-radius:20px;margin-bottom:18px;}
+
+.product{display:flex;gap:14px;background:rgba(255,255,255,.06);border-radius:20px;padding:14px;margin-bottom:14px;}
+.product img{width:90px;height:90px;object-fit:cover;border-radius:14px;}
+.product-info{flex:1;display:flex;flex-direction:column;}
+.product-name{font-weight:700;margin-bottom:6px;}
+.product-desc{font-size:13px;opacity:.8;margin-bottom:10px;}
+.product-price{font-weight:700;margin-top:auto;}
+
+.contact-box{margin-top:20px;background:rgba(255,255,255,.06);border-radius:20px;padding:16px;text-align:center;}
+.contact-desc{font-size:13px;opacity:.85;margin-bottom:14px;}
+.contact-actions{display:flex;gap:10px;}
+.btn{flex:1;padding:12px;border-radius:14px;text-decoration:none;background:rgba(255,255,255,.08);color:white;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;}
+.btn svg{width:19px;height:19px;fill:white;}
+.btn.tg svg{width:15px;height:15px;} /* Telegram lebih kecil */
+</style>
+</head>
+
+<body>
+
+<div id="loading"><div class="loader"></div><span></span></div>
+
+<div class="container" id="main">
+<div class="card">
+
+<div class="title">NuxVerify - VibeCode</div>
+
+<video class="media" autoplay loop muted playsinline>
+<source src="https://risrfgvolfxuavpsmfjn.supabase.co/storage/v1/object/public/uploads/1770499887816-4m2fifee.mp4" type="video/mp4">
+</video>
+
+<div class="product">
+<img src="https://risrfgvolfxuavpsmfjn.supabase.co/storage/v1/object/public/uploads/1770498839826-7phkx3xb.png">
+<div class="product-info">
+<div class="product-name">PANEL RAM UNLIMITED</div>
+<div class="product-desc">Panel Pterodactyl Ram Unlimited — tanpa batas ram, performa maksimal, siap untuk server skala besar dengan akses full fitur.</div>
+<div class="product-price">Rp5.000</div>
+</div>
+</div>
+
+<div class="product">
+<img src="https://risrfgvolfxuavpsmfjn.supabase.co/storage/v1/object/public/uploads/1770498839826-7phkx3xb.png">
+<div class="product-info">
+<div class="product-name">RESELLER PANEL</div>
+<div class="product-desc">Reseller Panel Pterodactyl — gabung grup, buat panel via bot admin, mudah dikelola, dan siap jual kembali.</div>
+<div class="product-price">Rp8.000</div>
+</div>
+</div>
+
+<div class="product">
+<img src="https://risrfgvolfxuavpsmfjn.supabase.co/storage/v1/object/public/uploads/1770498839826-7phkx3xb.png">
+<div class="product-info">
+<div class="product-name">ADMIN PANEL</div>
+<div class="product-desc">Admin Panel Pterodactyl — dapatkan akun admin panel dengan akses penuh untuk mengelola server dan membuat panel dengan mudah.</div>
+<div class="product-price">Rp15.000</div>
+</div>
+</div>
+
+<div class="contact-box">
+<div class="contact-desc">
+Note : jika ingin order produk atau jasa yang tersedia di atas silahkan hubungi contact di bawah ini dan jika ragu maka pergilah jauh jauh.</div>
+
+<div class="contact-actions">
+
+
+
+<a href="https://t.me/thenuxoffc" class="btn tg">
+<svg viewBox="0 0 24 24"><path d="M9.04 15.54l-.39 5.46c.56 0 .8-.24 1.09-.52l2.61-2.5 5.41 3.96c.99.55 1.69.26 1.95-.92l3.54-16.6c.34-1.54-.56-2.14-1.52-1.78L1.7 9.29c-1.49.58-1.47 1.41-.25 1.79l5.1 1.59L18.27 5.5c.55-.34 1.05-.15.64.19"/></svg>
+Telegram
+</a>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
+const loading=document.getElementById("loading");
+const main=document.getElementById("main");
+setTimeout(()=>{loading.style.display="none";main.style.display="flex";},1400);
+</script>
+
+</body>
+</html>
